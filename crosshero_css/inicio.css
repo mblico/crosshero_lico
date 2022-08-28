@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar{
+    background-color:white; 
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns:repeat(8,1fr);
+    align-items: center;
+}
+
+.logo{
+    height: 120px;
+    width: 450px;
+    padding-bottom: 25px;
+}
+
+.navbar-brand:hover{
+    color:rgb(141, 48, 48);
+    font-size:22px;
+    transform:perspective(10deg);
+}
+
+
+.menu li{
+    list-style-type: none;
+    padding: 15px;
+      
+}
+.menu li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(rgb(1, 1, 1));
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.menu li a:hover{
+    color:rgb(141, 48, 48);
+    font-size:22px;
+    transform:perspective(10deg);
+}
+
+
+/* CUERPO */
+
+
+.info{
+    background-color: rgba(242, 252, 248, 0.6);
+    color: rgb(1, 1, 1);
+    align-items: center;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.unete{
+    font-size: 14px;
+    font-weight: bold;
+    background: none;
+    color:rgb(245, 239, 239);
+    padding: 12px 20px;
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 20px; 
+     
+}
+.unete:hover{
+    background-color: black;
+    color:white;
+    font-weight: bold;
+}
