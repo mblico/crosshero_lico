@@ -15,11 +15,6 @@ body{
     align-items: center;
 }
 
-.logo{
-    height: 120px;
-    width: 450px;
-    padding-bottom: 25px;
-}
 
 .navbar-brand:hover{
     color:rgb(141, 48, 48);
@@ -31,6 +26,7 @@ body{
 .menu li{
     list-style-type: none;
     padding: 15px;
+    
       
 }
 .menu li a{
@@ -40,6 +36,8 @@ body{
     color: rgb(rgb(1, 1, 1));
     cursor: pointer;
     transition: all 0.5s;
+
+    
 }
 .menu li a:hover{
     color:rgb(141, 48, 48);
