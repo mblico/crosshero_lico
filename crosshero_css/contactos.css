@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar{
+    background-color:white; 
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns:repeat(8,1fr);
+    align-items: center;
+}
+
+.logo{
+    height: 120px;
+    width: 450px;
+    padding-bottom: 25px;
+}
+
+.menu{
+    grid-column: 2 / 6;
+    display: flex;
+    gap:40px;
+}
+.menu li{
+    list-style-type: none;
+      
+}
+.menu li a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(rgb(1, 1, 1), green, blue);
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.menu li a:hover{
+    color:rgb(141, 48, 48);
+    font-size:22px;
+    transform:perspective(10deg);
+}
+.menuBar{
+    display: none;
+}
+.login{
+    grid-column: 8/9;
+}
+
+
+/* CUERPO */
+.body{
+    height: 75vh;
+    background-image: url(../crosshero_imagenes/frase-espalda.jpeg);
+    background-size:contain;
+    max-width: 100%;
+
+}
+
+#nombre{
+    width: 300px;
+    height: 20px;
+}
+#apellido{
+    width: 300px;
+    height: 20px;
+}
+#pais{
+    width: 300px;
+
+}
+select{
+    width: 300px;
+    height: 20px;
+}
+#tel{
+    width: 300px;
+    height: 20px;
+}
+#mail{
+    width: 300px;
+    height: 20px;
+}
+#comentarios{
+    width: 300px;
+    height: 80px;
+}
+
+
+.formulario form fieldset{
+    background-color: rgb(180, 72, 72);
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+    width: 400px;
+    height: 400px;
+}
+.formulario form fieldset legend{
+    font-weight:600;
+    font-size: 20px;
+    color: white;
+
+}
+
+.formulario form input{
+   margin-bottom: 10px ;
+   padding: 3px;
+}
+.formulario form select{
+    margin-bottom: 10px;
+}
+.formulario div {
+    background-color: rgb(180, 72, 72);
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+    font-style:normal;
+    font-size: 15px; 
+    width: 350px;
+   margin-left: 20px;
+   }
+
+
+   
+.leyend{
+    grid-column:6/12 ;
+    grid-row: 3/7;
+    background-color: rgb(200, 197, 197);
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+    font-style: italic;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 20px;   
+}
+
+.buttons input{
+    padding: 5px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold; 
+
+}

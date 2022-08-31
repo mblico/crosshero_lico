@@ -1,0 +1,89 @@
+@media only screen and (max-width: 600px) {
+
+
+
+    .navBar{
+        position: relative;
+    }
+    
+    .login{
+        display: none;
+    }
+    .logo{
+        height: 110px;
+        width: 430px;
+        padding-bottom: 25px;
+    }
+    .menuBar{
+        display: block;
+        grid-column: 8/9;
+        font-size: 50px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    
+    
+    .menu{
+        position: absolute;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: white;
+        margin-top: 35em;
+        transform: translateX(200% );
+        transition: all 1s;
+        z-index: 1;
+    
+    }
+    .menu li a{
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 16px;
+        color: rgb(rgb(1, 1, 1), green, blue);
+        padding: 10px;
+        cursor: pointer;
+    }
+    .menu-toggle{
+        transform: translateX(170% );
+    }
+    /* MAIN*/
+    
+    .formulario{
+        grid-column: 2/9;
+        grid-row: 3/7;
+        color:rgb(12, 12, 12);
+        align-items: center;
+       
+    }
+    .leyend{
+        display: none;
+    }
+    
+    .formulario form fieldset{
+        width: 350px;
+        height: 400px;
+    }
+    .formulario div {
+        
+        font-size: 13px; 
+        width: 290px;
+        margin-left: 25px;
+       
+    
+    }
+    .switch {
+        --button-width: 2em;
+        --button-height: 1em;
+        --toggle-diameter: 1em;
+        --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+        --toggle-shadow-offset: 10px;
+        --toggle-wider: 3em;
+        --color-grey: #cccccc;
+        --color-green: #4296f4;
+       
+       }
+    /* FOOTER*/
+    .followUs{
+        display: none;
+    }
+    }

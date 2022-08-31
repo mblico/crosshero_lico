@@ -5,143 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CROSSHERO</title>
-    <link rel="shorcut icon" href="../crosshero_imagenes/LOGO CROSSHERO.jpg">
-    <link rel="stylesheet" href="../crosshero_css/contactos.css">
+    <link rel="shorcut icon" href="../crosshero_lico/crosshero_imagenes/LOGO CROSSHERO.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-     <link rel="stylesheet" href="../crosshero_css/contactos.css">
-   <link rel="stylesheet" href="../crosshero_css/mediaQueriesContactos.css">
+    <link rel="stylesheet" href="../crosshero_css/contactos.css">
+    <link rel="stylesheet" href="../crosshero_css/mediaQueriesContactos.css">
 </head>
 <body>
-    <header>
-        <nav class=navBar>
-                <img  class="logo" src="../crosshero_imagenes/LOGO.jpf" alt="logo de la marca">
-            <ul class="menu" id="menu">
-                <li>
-                   <a href="./inicio.html">Inicio</a>
+    <header class="container">
+        <div class="row">
+            <span class="col-5 fondo-nav">
+                <img  class="img-fluid pb-3 " src="../crosshero_imagenes/LOGO.jpf" alt="logo de la marca">  
+            </span>
+        <nav class="navbar navbar-expand-lg col-7 fondo-nav navBar>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="submit" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu mt-4" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="../crosshero_lico/index.html">Inicio</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
                   </li>
-                <li>
-                <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                   <a href="./beneficios.html">Beneficios</a>
-                </li>
-                <li>
-                <a href="#">Entrenos</a>
-                </li>
-                <li>
-                <a href="./contactos.html">Contacto</a>
-                </li>
-                <li>
-                <a href="#"> Notas</a>
-                </li>
-             </ul>
-             <div class=menuBar id="menuBar">
-                <i class="fas fa-bars" ></i>
-             </div>
-             <div class="login">
-                <button>LOG IN</button>
-             </div>
-        </nav>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../crosshero_lico/crosshero_html.html/beneficios.html">Beneficios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Entrenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Notas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
     </header>
     <main>
-        <h1>Título Principal</h1>
-<div class="container">
- <h2>Formulario Básico</h2>
- <form action="#">
-<div class="form-group col-4">
-<label for="Nombre completo">Nombre completo:</label>
-    <input type="nombreCompleto"
-   id="email" placeholder="Ingrese nombre completo"
-   name="email">
-<label for="email">Email:</label>
- <input type="email"
-id="email" placeholder="Ingrese email"
-name="email">
- <label for="email">Email:</label>
- <input type="email"
-id="email" placeholder="Ingrese email"
-name="email">
+        <form class="formulario body ">
 
-</div>
- …..
-<button type="submit" class="btn btn-default">
- Ingresar
- </button>
- </form>
-</div>
-     <!--<section class="body">
-        <span class="formulario">
-            <h1>Contacto</h1>
-            <form>
-                <fieldset class="container">
-                  <legend>Datos personales</legend>
-                  <label for="nombre ">Nombre</label>
-                  <br/>
-                  <input id="nombre" type="text" placeholder="Ingrese su nombre">
-                  <br/>
-                  <label for="apellido">Apellido</label>
-                  <br/>
-                  <input id="apellido" type="text" placeholder="Ingrese su apellido">
-                  <br/>
-                  <label for="pais">Pais</label>
-                  <br/>
-                  <select placeholder="Seleccione su pais" >
-                      <option>Argentina</option>
-                      <option>Brasil</option>
-                      <option>Chile</option>
-                      <option>Colombia</option>
-                      <option>Peru</option>
-                      <option>Uruguay</option>
-                     </select>
-                  <br/>
-                  <label for="tel">Telefono de contacto</label>
-                  <br/>
-                  <input id="tel" type="number" placeholder="Ingrese su telefono">
-                  <br/>
-                  <label for="mail">Email</label>
-                  <br/>
-                  <input  id="mail" type="text" placeholder="Ingrese su email" >
-                  <br/>
-                  <label for="comentarios">Comentarios</label>
-                  <br/>
-                  <textarea id="comentarios" placeholder="Ingrese su mensaje"></textarea> 
-                  <br/>
-                </fieldset>
-               <br/>
-               <div>
-                    <label class="switch">Quiero recibir novedades de CrossHero   
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-               </div>
-               <br/>
-               <section class="buttons">
-                   <input type="submit" value="Enviar mensaje" >
-                   <input type="reset" value="Cancelar">
-               </section>
-            </form>
-        </span>
-        <div class="leyend">
-            <p>"CROSSFIT ES COMO LA VIDA. SI ERES ALGUIEN QUE SIGUE HASTA EL FINAL, NO IMPORTA CUÁN DIFÍCIL O DOLOROSO SE VUELVA TODO, O SI ERES ALGUIEN QUE SE DA POR VENCIDO. O UN TRAMPOSO. O UN MENTIROSO. CROSSFIT PUEDE REVELAR CÓMO ERES EN 15 MINUTOS CON UNA BARRA Y UN CRONÓMETRO"
+            <div class="form-group"> <!-- Full Name -->
+                <label for="full_name_id" class="control-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Nombre completo">
+            </div>    
+        
+            <div class="form-group"> <!-- Zip Code-->
+                <label for="zip_id" class="control-label">Telefono</label>
+                <input type="number" class="form-control" id="tel_id" name="tel" placeholder="Telefono">
+            </div>        
+                                   
+                                    
+            <div class="form-group"> <!-- Street 2 -->
+                <label for="street2_id" class="control-label">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+            </div>                                      
+                                    
+            <div class="form-group"> <!-- State Button -->
+                <label for="state_id" class="control-label">Pais</label>
+                <select class="form-control" id="state_id" >
+                      <option value="AR">Argentina</option>
+                      <option value="BR">Brasil</option>
+                      <option value="CL">Chile</option>
+                      <option value="COL">Colombia</option>
+                      <option value="PR">Peru</option>
+                      <option value="UY">Uruguay</option>
+                </select>                    
             </div>
+            <div class="form-group"> <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>     
+            <div class="form-group"> <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Cancelar</button>
+            </div>     
+         </form>
+  </main>
+  <footer class="text-center text-lg-start bg-light text-muted">
+ 
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    
+      <div class="me-5 d-none d-lg-block ">
+        <span>Seguinos en redes sociales</span>
+      </div>
+    
+      <div>
+        <a href="$" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     
     </section>
-    </main>
-    <footer class="footer">
-        <div class="followUs">
-            <h3>SEGUINOS EN REDES SOCIALES</h3>
-        </div>
+   
+
+      <div class="container text-center text-md-start mt-5">
         
-        <div class="redes">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
+        <div class="row mt-3">
+         
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+         
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>CROSSHERO
+            </h6>
+            <p>
+            <strong>CrossFit Journal</strong>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+            <p><i class="fas fa-home me-3"></i> WhatsApp +34 947 656 602</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              support@crosshero.com  
+            </p>
+            
+          </div>
+      
         </div>
+      
+      </div>
+    </section>
     
-
-
-    </footer>
-    <script src="../script.js/script.js"></script>
-</body>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://games.crossfit.com/regionals/latinamerica">CrossFitLatam.com</a>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>  
 </html>
