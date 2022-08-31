@@ -16,7 +16,7 @@
     cursor: pointer;
     transition: all 0.5s;
     &:hover{
-        color:$menuhover;
+        color:rgb(141, 48, 48);
     font-size:large;
     transform:perspective(10deg);
     }
@@ -33,7 +33,7 @@
         font-size: 30px;
         transition: all 0.5s;
         &:hover{
-            color:$menuhover;
+            color:rgb(141, 48, 48);
             font-size:35px;
             transform:perspective(10deg);
         }

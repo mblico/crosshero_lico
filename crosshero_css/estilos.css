@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+
+.logo {
+  height: 120px;
+  width: 450px;
+  padding-bottom: 25px;
+}
+
+.menu {
+  grid-column: 2/6;
+  display: flex;
+  gap: 40px;
+}
+.menu li {
+  list-style-type: none;
+}
+.menu li a {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgb(1, 1, 1);
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.menu li a:hover {
+  color: rgb(141, 48, 48);
+  font-size: 22px;
+  transform: perspective(10deg);
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menuBar {
+  display: none;
+}
+
+.login {
+  grid-column: 8/9;
+}
+
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid rgb(1, 1, 1);
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar {
+    position: relative;
+  }
+  .login {
+    display: none;
+  }
+  .logo {
+    height: 115px;
+    width: 430px;
+    padding-bottom: 25px;
+  }
+  .menuBar {
+    display: block;
+    grid-column: 8/9;
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  .menu {
+    position: absolute;
+    height: 70vh;
+    display: grid;
+    align-items: center;
+    background-color: white;
+    margin-top: 35em;
+    transform: translateX(200%);
+    transition: all 1s;
+    z-index: 1;
+  }
+  .menu li a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+    color: rgb(1, 1, 1);
+    padding: 10px;
+    cursor: pointer;
+  }
+  .menu-toggle {
+    transform: translateX(170%);
+  }
+}
+.hero {
+  height: 75vh;
+  background-image: url(../crosshero_imagenes/imagen_hombre_index.webp);
+  background-image: linear-gradient(rgba 1, 1, 1, 0.8), rgba 1, 1, 1, 0.2;
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  align-items: center;
+}
+.hero h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.info {
+  grid-column: 8/10;
+  grid-row: 3/5;
+  color: rgb(12, 12, 12);
+  align-items: center;
+}
+
+.unete {
+  font-size: 14px;
+  font-weight: bold;
+  background: none;
+  color: rgb(12, 12, 12);
+  padding: 12px 20px;
+  border: 1px solid rgb(12, 12, 12);
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.unete:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.info {
+  grid-column: 1/9;
+  grid-row: 1/8;
+  align-items: center;
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(242, 252, 248, 0.6);
+  color: rgb(1, 1, 1);
+  font-size: 1em;
+  border: 2px solid rgb(1, 1, 1);
+  text-align: center;
+  font-style: italic;
+}
+.info .unete {
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .info .info {
+    grid-column: 1/9;
+    grid-row: 1/8;
+    align-items: center;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(242, 252, 248, 0.6);
+    color: rgb(1, 1, 1);
+    font-size: 1em;
+    border: 2px solid rgb(1, 1, 1);
+    text-align: center;
+    font-style: italic;
+  }
+  .info .unete {
+    margin-bottom: 5px;
+  }
+}
+
+.footer {
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(100, 96, 96), white);
+  color: black;
+  border-top: 5px solid rgb(141, 48, 48);
+  justify-content: space-around;
+}
+
+.followUs {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.followUs:hover {
+  color: rgb(141, 48, 48);
+  font-size: large;
+  transform: perspective(10deg);
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+}
+.redes i {
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+.redes i:hover {
+  color: rgb(141, 48, 48);
+  font-size: 35px;
+  transform: perspective(10deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .followUs {
+    display: none;
+  }
+}/*# sourceMappingURL=estilos.css.map */
