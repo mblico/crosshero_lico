@@ -111,23 +111,30 @@ button {
         display: grid;
         align-items: center;
         background-color: white;
-        margin-top: 35em;
-        transform: translateX(200% );
+        margin-top: 30em;
+        transform: translateX(205% );
         transition: all 1s;
         z-index: 1;
         li{
             a{
                 text-decoration: none;
-        font-weight: 900;
-        font-size: 16px;
+        font-weight: 700;
+        font-size: 14px;
         color: rgb(1, 1, 1);
         padding: 10px;
         cursor: pointer;
+        &:hover{
+            color:rgb(141, 48, 48);
+            font-size:16px;
+            transform:perspective(10deg);
+        }
             }
         }
     
     }
     .menu-toggle{
-        transform: translateX(170% );
+        transform: translateX(120% );
     }
 }
+
+
