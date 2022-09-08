@@ -1,3 +1,30 @@
+.unete, button {
+  padding: 1.3em 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  border: 1px solid rgb(1, 1, 1);
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  align-items: center;
+}
+
+.redes i:hover, .followUs:hover, .menu li a:hover {
+  color: rgb(141, 48, 48);
+  font-size: 22px;
+  transform: perspective(10deg);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +32,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
 }
 
 .navBar {
@@ -14,6 +41,7 @@ body {
   justify-content: space-around;
   grid-template-columns: repeat(8, 1fr);
   align-items: center;
+  border-bottom: 3px solid rgb(1, 1, 1);
 }
 
 .logo {
@@ -39,12 +67,6 @@ body {
   cursor: pointer;
   transition: all 0.5s;
 }
-.menu li a:hover {
-  color: rgb(141, 48, 48);
-  font-size: 22px;
-  transform: perspective(10deg);
-}
-
 .menu li {
   list-style-type: none;
 }
@@ -58,7 +80,6 @@ body {
 }
 
 button {
-  padding: 1.3em 3em;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -66,11 +87,6 @@ button {
   color: #000;
   background-color: #fff;
   border: 1px solid rgb(1, 1, 1);
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
 }
 button:hover {
   background-color: #23c483;
@@ -123,7 +139,7 @@ button:active {
   }
   .menu li a:hover {
     color: rgb(141, 48, 48);
-    font-size: 16px;
+    font-size: 22px;
     transform: perspective(10deg);
   }
   .menu-toggle {
@@ -136,13 +152,9 @@ button:active {
   background-image: linear-gradient(rgba 1, 1, 1, 0.8), rgba 1, 1, 1, 0.2;
   background-size: cover;
   max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  align-items: center;
 }
 .hero h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
   font-style: italic;
 }
 
@@ -183,14 +195,12 @@ button:active {
   }
 }
 .unete {
+  background-color: white;
+  border: 1px solid rgb(1, 1, 1);
+  border-radius: 45px;
   font-size: 14px;
-  font-weight: bold;
-  background: none;
   color: rgb(12, 12, 12);
-  padding: 12px 20px;
-  border: 1px solid rgb(12, 12, 12);
-  margin-top: 10px;
-  border-radius: 20px;
+  margin-top: 20px;
 }
 .unete:hover {
   background-color: black;
@@ -204,7 +214,7 @@ button:active {
     grid-row: 1/8;
     align-items: center;
     margin-left: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     background-color: rgba(242, 252, 248, 0.6);
     color: rgb(1, 1, 1);
     font-size: 1em;
@@ -223,7 +233,7 @@ button:active {
   align-items: center;
   background-image: linear-gradient(to right, rgb(100, 96, 96), white);
   color: black;
-  border-top: 5px solid rgb(141, 48, 48);
+  border-top: 4px solid rgb(141, 48, 48);
   justify-content: space-around;
 }
 
@@ -233,12 +243,6 @@ button:active {
   cursor: pointer;
   transition: all 0.5s;
 }
-.followUs:hover {
-  color: rgb(141, 48, 48);
-  font-size: large;
-  transform: perspective(10deg);
-}
-
 .redes {
   display: flex;
   justify-content: center;
@@ -250,14 +254,34 @@ button:active {
   font-size: 30px;
   transition: all 0.5s;
 }
-.redes i:hover {
-  color: rgb(141, 48, 48);
-  font-size: 35px;
-  transform: perspective(10deg);
-}
-
 @media only screen and (max-width: 600px) {
   .followUs {
     display: none;
   }
+}
+button, .unete {
+  padding: 1.3em 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  border: 1px solid rgb(1, 1, 1);
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  align-items: center;
+}
+
+.menu li a:hover, .followUs:hover, .redes i:hover {
+  color: rgb(141, 48, 48);
+  font-size: 22px;
+  transform: perspective(10deg);
 }/*# sourceMappingURL=estilos.css.map */

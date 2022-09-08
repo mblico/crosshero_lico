@@ -5,7 +5,7 @@
     align-items: center;
     background-image:linear-gradient( to right, rgb(100, 96, 96) , white);
     color:black;
-    border-top: 5px solid rgb(141, 48, 48);
+    border-top: map-get($bordes,bordeBottom );
     justify-content: space-around;
    
 }
@@ -16,9 +16,7 @@
     cursor: pointer;
     transition: all 0.5s;
     &:hover{
-        color:rgb(141, 48, 48);
-    font-size:large;
-    transform:perspective(10deg);
+        @extend %hover;
     }
 }
 
@@ -33,9 +31,7 @@
         font-size: 30px;
         transition: all 0.5s;
         &:hover{
-            color:rgb(141, 48, 48);
-            font-size:35px;
-            transform:perspective(10deg);
+            @extend %hover;
         }
     }
     

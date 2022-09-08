@@ -4,12 +4,9 @@
     background-image: linear-gradient(rgba 1,1,1, .8) , (rgba 1,1,1, .2);
     background-size: cover;
     max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows:repeat(8,1fr);
-    align-items: center;
-    h1{
-        font-family: Arial, Helvetica, sans-serif;
+   @extend %body;
+    h1{ 
+        font-family: map-get($fonts, fontFamily );
         font-style: italic;
     }
 }
@@ -40,14 +37,11 @@
 }
 
 .unete{
+    @extend %botonBase;
+    @include buttons( white, 1px solid rgb(1, 1, 1), 45px) ;
     font-size: 14px;
-    font-weight: bold;
-    background: none;
     color:rgb(12, 12, 12);
-    padding: 12px 20px;
-    border: 1px solid rgb(12, 12, 12);
-    margin-top: 10px;
-    border-radius: 20px; 
+    margin-top: 20px;
     &:hover{
         background-color: black;
         color:white;
@@ -66,7 +60,7 @@
             
             align-items: center;
             margin-left: 5px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: map-get($fonts, fontFamily );
             background-color:rgba(242, 252, 248, 0.6);
            color: rgb(1, 1, 1);
            font-size: 1em;
