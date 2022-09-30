@@ -2,135 +2,54 @@
     padding: 0;
     margin: 0;
     box-sizing:border-box;
-}
-body{
-    font-family: map-get($fonts, fontFamily );
-}
+  }
+  body{
+    font-family: Arial;
+    text-align: center;
+    border-bottom: 7px solid rgb(141,48,48);
+  }
 
 
 .navBar{
     background-color:white; 
-    display: flex;
-    justify-content: space-around;
-    grid-template-columns:repeat(8,1fr);
-    align-items: center;
-    border-bottom: map-get($bordes,bordeTop );
 
 }
-
-.logo{
-    height: 120px;
-    width: 450px;
-    padding-bottom: 25px;
-}
+.navbar-brand:hover{
+    color:rgb(141, 48, 48);
+    font-size:20px;
+    transform:perspective(10deg);
+  
+  }
 
 .menu{
-    grid-column: 2 / 6;
-    display: flex;
-    gap:40px;
+    
     li{
         list-style-type: none;
+        padding: 10px;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: center;
+          
         a{
             text-decoration: none;
-            font-weight: 900;
-            font-size: 20px;
-            color:rgb(1, 1, 1);
-            padding: 10px;
-            cursor: pointer;
-            transition: all 0.5s;
+  font-weight: 600;
+  font-size: 19px;
+  color: rgb(1, 1, 1);
+  cursor: pointer;
+  transition: all 0.5s;
             &:hover{
-              @extend %hover;
+                color:rgb(141, 48, 48);
+                font-size:20px;
+                transform:perspective(10deg);
             }
-        }
-          
+        }        
     }
-}
-.menu li{
-    list-style-type: none;
-      
 }
 
-.menuBar{
-    display: none;
-}
-.login{
-    grid-column: 8/9;
-}
-button {
-    @extend %botonBase;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color:map-get($buttons , colorTop );
-    border:1px solid rgb(1, 1, 1);
-    &:hover {
-        background-color: map-get($buttons , bgTop);
-        box-shadow: map-get($buttons ,  boxShadowTop);
-        color: map-get($buttons , colorTop );
-        transform: translateY(-7px);
-      }
 
-}
-  
-  button:active {
-    transform: translateY(-1px);
-  }
-  
 
-  @media only screen and (max-width: 600px){
-    .navBar{
-        position: relative;
-    }
-    
-    .login{
-        display: none;
-    }
-    .logo{
-        height: 115px;
-        width: 430px;
-        padding-bottom: 25px;
-    }
-    .menuBar{
-        display: block;
-        grid-column: 8/9;
-        font-size: 50px;
-        cursor: pointer;
-        margin-right: 15px;
-    }
-    
-    
-    .menu{
-        position: absolute;
-        height: 70vh;
-        display: grid;
-        align-items: center;
-        background-color: white;
-        margin-top: 30em;
-        transform: translateX(205% );
-        transition: all 1s;
-        z-index: 1;
-        li{
-            a{
-                text-decoration: none;
-        font-weight: 700;
-        font-size: 14px;
-        color: map-get($links, colorLink );
-        padding: 10px;
-        cursor: pointer;
-        &:hover{
-            color:map-get($links, colorLinkHover );
-            font-size:map-get($links,fontSizeHover );
-            transform:perspective(10deg);
-        }
-            }
-        }
-    
-    }
-    .menu-toggle{
-        transform: translateX(120% );
-    }
-}
+
+ 
+
 
 

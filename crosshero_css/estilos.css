@@ -1,28 +1,18 @@
-.unete, button {
-  padding: 1.3em 3em;
-  font-weight: bold;
+.buttons {
+  margin-top: 15px;
+  padding: 1.2em 2em;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  border: 1px solid rgb(1, 1, 1);
+  color: #000;
+  background-color: #fff;
+  border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  align-items: center;
-}
-
-.redes i:hover, .followUs:hover, .menu li a:hover {
-  color: rgb(141, 48, 48);
-  font-size: 22px;
-  transform: perspective(10deg);
 }
 
 * {
@@ -33,137 +23,42 @@
 
 body {
   font-family: Arial;
+  text-align: center;
+  border-bottom: 7px solid rgb(141, 48, 48);
 }
 
 .navBar {
   background-color: white;
-  display: flex;
-  justify-content: space-around;
-  grid-template-columns: repeat(8, 1fr);
-  align-items: center;
-  border-bottom: 3px solid rgb(1, 1, 1);
 }
 
-.logo {
-  height: 120px;
-  width: 450px;
-  padding-bottom: 25px;
+.navbar-brand:hover {
+  color: rgb(141, 48, 48);
+  font-size: 20px;
+  transform: perspective(10deg);
 }
 
-.menu {
-  grid-column: 2/6;
-  display: flex;
-  gap: 40px;
-}
 .menu li {
   list-style-type: none;
+  padding: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
 }
 .menu li a {
   text-decoration: none;
-  font-weight: 900;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 19px;
   color: rgb(1, 1, 1);
-  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
 }
-.menu li {
-  list-style-type: none;
-}
-
-.menuBar {
-  display: none;
-}
-
-.login {
-  grid-column: 8/9;
-}
-
-button {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: 1px solid rgb(1, 1, 1);
-}
-button:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-
-button:active {
-  transform: translateY(-1px);
-}
-
-@media only screen and (max-width: 600px) {
-  .navBar {
-    position: relative;
-  }
-  .login {
-    display: none;
-  }
-  .logo {
-    height: 115px;
-    width: 430px;
-    padding-bottom: 25px;
-  }
-  .menuBar {
-    display: block;
-    grid-column: 8/9;
-    font-size: 50px;
-    cursor: pointer;
-    margin-right: 15px;
-  }
-  .menu {
-    position: absolute;
-    height: 70vh;
-    display: grid;
-    align-items: center;
-    background-color: white;
-    margin-top: 30em;
-    transform: translateX(205%);
-    transition: all 1s;
-    z-index: 1;
-  }
-  .menu li a {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
-    color: rgb(1, 1, 1);
-    padding: 10px;
-    cursor: pointer;
-  }
-  .menu li a:hover {
-    color: rgb(141, 48, 48);
-    font-size: 22px;
-    transform: perspective(10deg);
-  }
-  .menu-toggle {
-    transform: translateX(120%);
-  }
-}
-.hero {
-  height: 75vh;
-  background-image: url(../crosshero_imagenes/imagen_hombre_index.webp);
-  background-image: linear-gradient(rgba 1, 1, 1, 0.8), rgba 1, 1, 1, 0.2;
-  background-size: cover;
-  max-width: 100%;
-}
-.hero h1 {
-  font-family: Arial;
-  font-style: italic;
+.menu li a:hover {
+  color: rgb(141, 48, 48);
+  font-size: 20px;
+  transform: perspective(10deg);
 }
 
 .info {
-  grid-column: 2/6;
-  grid-row: 2/7;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  border-radius: 10px;
   background-color: rgba(242, 252, 248, 0.6);
   color: rgb(1, 1, 1);
   align-items: center;
@@ -194,94 +89,102 @@ button:active {
     opacity: 1;
   }
 }
-.unete {
-  background-color: white;
-  border: 1px solid rgb(1, 1, 1);
-  border-radius: 45px;
-  font-size: 14px;
-  color: rgb(12, 12, 12);
-  margin-top: 20px;
-}
-.unete:hover {
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
-
-@media only screen and (max-width: 600px) {
-  .info {
-    grid-column: 1/9;
-    grid-row: 1/8;
-    align-items: center;
-    margin-left: 5px;
-    font-family: Arial;
-    background-color: rgba(242, 252, 248, 0.6);
-    color: rgb(1, 1, 1);
-    font-size: 1em;
-    border: 2px solid rgb(1, 1, 1);
-    text-align: center;
-    font-style: italic;
-  }
-  .unete {
-    margin-bottom: 5px;
-  }
-}
-.footer {
-  display: flex;
-  height: 80px;
-  justify-content: space-around;
-  align-items: center;
-  background-image: linear-gradient(to right, rgb(100, 96, 96), white);
-  color: black;
-  border-top: 4px solid rgb(141, 48, 48);
-  justify-content: space-around;
-}
-
-.followUs {
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-.redes {
-  display: flex;
-  justify-content: center;
-}
-.redes i {
-  padding-left: 50px;
-  padding-right: 50px;
-  cursor: pointer;
-  font-size: 30px;
-  transition: all 0.5s;
-}
-@media only screen and (max-width: 600px) {
-  .followUs {
-    display: none;
-  }
-}
-button, .unete {
-  padding: 1.3em 3em;
-  font-weight: bold;
+.buttons {
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
+  color: #000;
+  background-color: #fff;
   border: 1px solid rgb(1, 1, 1);
+}
+.buttons:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.infoNosotros {
+  margin-top: 10px;
+  background-color: rgba(242, 252, 248, 0.6);
+  color: rgb(1, 1, 1);
+  align-items: center;
+  font-style: inherit;
+  text-align: justify;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-timing-function: inherit;
+          animation-timing-function: inherit;
+  border: 3px solid rgba(136, 57, 57, 0.6);
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.infoNosotros h1 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.formulario {
+  background-image: url(../crosshero_imagenes/frase-espalda.jpeg);
+  background-size: contain;
+  max-width: 100%;
+}
+.formulario fieldset {
+  background-color: rgb(180, 72, 72);
+  border-radius: 5px;
+  border: 3px solid rgb(5, 5, 5);
+  font-style: normal;
+  width: 500px;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+}
+.formulario fieldset h2 {
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+  margin-bottom: 15px;
+  background-color: rgba(86, 90, 88, 0.4);
+  border: 2px solid rgb(1, 1, 1);
+  margin-left: 10px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.buttons {
+  margin-top: 15px;
+  padding: 1.2em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  align-items: center;
-}
-
-.menu li a:hover, .followUs:hover, .redes i:hover {
-  color: rgb(141, 48, 48);
-  font-size: 22px;
-  transform: perspective(10deg);
 }/*# sourceMappingURL=estilos.css.map */
